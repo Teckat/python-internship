@@ -1,0 +1,6 @@
+Research on generating certificates using python
+
+1. download a blank certificate (jpg, png)
+2. how to open the certificate and save it to a location (import os , os.path)
+3. writing text on images
+4. position the text on images

@@ -94,8 +94,14 @@ def jumWord(w):
     return(l)
 
 
-def checkWord():
-    print()
+def checkWord(word, ans, points):
+    if (ans == word):
+        print("Congrat's you are correct")
+        points += 1
+    else:
+        print("oooho! you are wrong.....")
+
+    return(points)
 
 
 def play():
@@ -108,11 +114,36 @@ def play():
     pp2 = 0
 
     turn = 0   # 0 -> player 1's turn  , 1 -> player 2's turn
-    while(1):
+
+    choice = 'y'
+
+    while(choice == 'y'):
         word = ranWord()
 
         jumbled = jumWord(word)
         print(jumbled)
+
+        if(turn == 0):
+            print(p1+"'s Turn")
+            ans = input('Enter the correct word')
+
+            pp1 = checkWord(word, ans, pp1)
+
+            turn = 1
+        elif(turn == 1):
+
+            print(p2+"'s Turn")
+            ans = input('Enter the correct word')
+
+            pp2 = checkWord(word, ans, pp2)
+
+            turn = 0
+
+        choice = input('enter y to continue or x to stop')
+        if(choice != 'y'):
+            print("player 1 " + p1 + " scored = " + str(pp1))
+            print("player 2 " + p2 + " scored = " + str(pp2))
+            break
 
 
 play()
