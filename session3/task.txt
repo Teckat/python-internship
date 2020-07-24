@@ -1,0 +1,4 @@
+
+
+1. Arrange the text on the image according to the text width
+2. Email to any account through your account via python
