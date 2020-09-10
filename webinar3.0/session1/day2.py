@@ -71,9 +71,16 @@
 
 # print(divmod(4, 3))
 
-x = 10
-print(x)
-y = 20
-print(x, y)
+# x = 10
+# print(x)
+# y = 20
+# print(x, y)
 
-a1 = 21
+# a1 = 21
+
+
+# x = 2**4
+# print(x)
+
+# x = 2+3j
+# print(abs(x))
