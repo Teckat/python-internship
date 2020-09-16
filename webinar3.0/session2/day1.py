@@ -68,6 +68,7 @@ x = {'a': [12, 13, 14], 'b': {'name': 'teckat', 'class': 'entrepreneur'}, 'c': 3
 # del x
 # print(x)
 
+
 # clear
 
 x.clear()
